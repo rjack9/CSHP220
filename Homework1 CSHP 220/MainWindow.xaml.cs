@@ -25,28 +25,17 @@ namespace Homework1_CSHP_220
             InitializeComponent();
         }
 
-        private void uxName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            checkSubmitButton();
-        }
-
-        private void uxPassword_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            checkSubmitButton();
-        }
-
-        private void checkSubmitButton()
+        private void TextChanged(object sender, TextChangedEventArgs e)
         {
             if ((uxName.Text == String.Empty) || (uxPassword.Text == String.Empty))
             {
                 uxSubmit.IsEnabled = false;
             }
 
-            else 
+            else
             {
                 uxSubmit.IsEnabled = true;
             }
-           
         }
 
         private void uxSubmit_Click(object sender, RoutedEventArgs e)
