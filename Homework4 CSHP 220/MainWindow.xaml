@@ -1,0 +1,19 @@
+﻿<Window x:Class="Homework4_CSHP_220.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework4_CSHP_220"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+
+        <TextBlock HorizontalAlignment="Center">US Zip Codes or Canadian Postal Codes:</TextBlock>
+        <TextBlock HorizontalAlignment="Center">Format US Zip as ##### or #####-####</TextBlock>
+        <TextBlock HorizontalAlignment="Center">Format Can Postal as A#B#C# or A#B #C#</TextBlock>
+        <TextBox x:Name="uxPostalCode" Width="260" TextChanged="uxPostalCode_TextChanged"></TextBox>
+ 
+        <Button x:Name="uxSubmit" IsEnabled="False" Width="260" Content="Submit"/>
+
+    </StackPanel>
+</Window>
