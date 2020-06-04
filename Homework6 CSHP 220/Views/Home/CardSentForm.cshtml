@@ -1,0 +1,24 @@
+﻿@model Homework6_CSHP_220.Models.SignerResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CardSentForm</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <h4>Birthday Card Generator</h4>
+
+    <p>Birthday Card Sent</p>
+
+    <h1>From: @Model.From</h1>
+    <h1>To: @Model.To</h1>
+    <h1>Message: @Model.Message</h1>
+</body>
+</html>
